@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+    color:white;
+}
+
+.logo{
+    font-size:30px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.btn{
+    padding:10px 20px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+/* HERO */
+
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:80px 8%;
+    gap:40px;
+
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:12px;
+}
+
+/* FEATURES */
+
+.features{
+
+    text-align:center;
+
+    padding:80px 8%;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ABOUT */
+
+.about{
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+/* CONTACT */
+
+.contact{
+
+    background:#2563eb;
+
+    color:white;
+
+    text-align:center;
+
+    padding:70px 8%;
+
+}
+
+.contact .btn{
+
+    background:white;
+
+    color:#2563eb;
+
+    margin-top:20px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.nav-links{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.hero{
+
+    flex-direction:column;
+
+}
+
+.hero-text h1{
+
+    font-size:38px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+}
